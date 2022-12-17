@@ -1,0 +1,32 @@
+[
+    {
+        "title":"World Cup 2022",
+        "description":"Qatar22",
+        "body":"The most expensive World Cup in history!",
+        "tagList": ["worldcup", "football", "soccer"]
+    },
+    {
+        "title":"Izbori2022",
+        "description":"Odlučujući",
+        "body":"2. oktobar izbori.",
+        "tagList": ["bih", "politika", "nato"]
+    },
+    {
+        "title":"Elektrotehnički fakultet",
+        "description":"Univerzitet u Sarajevu",
+        "body":"Novi statut",
+        "tagList": ["bih", "unsa"]
+    },
+    {
+        "title":"Politika",
+        "description":"Nova vlast",
+        "body":"Ocekivanja?",
+        "tagList": ["bih", "politika", "izbori"]
+    },
+    {
+        "title":"Univerzitet u Sarajevu",
+        "description":"UNSA",
+        "body":"Provjera diplome",
+        "tagList": ["unsa", "skandal", "bih", "diploma"]
+    }
+]
