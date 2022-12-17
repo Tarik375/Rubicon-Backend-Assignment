@@ -65,18 +65,25 @@ namespace API.Data
         public async Task<BlogPostResponseDto> UpdateBlogPost(string slug, BlogPostRequestDto blogPostRequestDto)
         {
           var blogPost = await _context.Blogs.SingleOrDefaultAsync(x => x.Slug == slug);
-          if(blogPostRequestDto.title != null)
-          {
-            var _slugHelper = new SlugHelper();
-            var newSlug = _slugHelper.GenerateSlug(blogPostRequestDto.title);
-          //  var listOfBlogPosts = await _context.BlogPostTags.Where(x => x.Slug == slug).ToListAsync();
-            blogPost.Slug = newSlug;
-            blogPost.Title = blogPostRequestDto.title;
-          }
           if(blogPostRequestDto.description != null)
             blogPost.Description = blogPostRequestDto.description;
           if(blogPostRequestDto.body != null)
-          blogPost.Body = blogPostRequestDto.body;
+            blogPost.Body = blogPostRequestDto.body;
+          if(blogPostRequestDto.title != null)
+          {
+            var _slugHelper = new SlugHelper();
+            var list = await GetTagsByBlogPost(slug);
+            BlogPostRequestDto newObject = new BlogPostRequestDto
+            {
+              title = blogPostRequestDto.title,
+              description = blogPost.Description,
+              body = blogPost.Body,
+              tagList = list
+            };
+            var newBlogPostResponseDto = await AddBlogPost(newObject); 
+            await DeleteBlogPost(slug);
+            return newBlogPostResponseDto;
+          }
           blogPost.UpdatedAt = DateTime.Now;
           Update(blogPost);
           await _context.SaveChangesAsync();

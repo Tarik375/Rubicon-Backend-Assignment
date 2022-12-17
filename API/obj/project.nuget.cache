@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sc3QqwF2ARILUdNhRiWArataRYYNvxpLGd2G9uAr9/eYTMTn4GbZswRsUlCdz6AL4Ah0Bzr1cC9+DEmmoW5qJg==",
+  "dgSpecHash": "p/XIY9BrIxHwZ0S36PhBp1HWrlWd+uKhlh9UtVVckT3RXWwSQKiulcuZnoAOpahB8m70IP3UjycwChrXGvdTuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tarik\\Desktop\\assignmentFolder\\blogApp\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Tarik\\Desktop\\rubicon\\Rubicon-Backend-Assignment\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tarik\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Tarik\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

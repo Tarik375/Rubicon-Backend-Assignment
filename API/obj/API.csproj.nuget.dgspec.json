@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tarik\\Desktop\\assignmentFolder\\blogApp\\API\\API.csproj": {}
+    "C:\\Users\\Tarik\\Desktop\\rubicon\\Rubicon-Backend-Assignment\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tarik\\Desktop\\assignmentFolder\\blogApp\\API\\API.csproj": {
+    "C:\\Users\\Tarik\\Desktop\\rubicon\\Rubicon-Backend-Assignment\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tarik\\Desktop\\assignmentFolder\\blogApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Tarik\\Desktop\\rubicon\\Rubicon-Backend-Assignment\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Tarik\\Desktop\\assignmentFolder\\blogApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Tarik\\Desktop\\rubicon\\Rubicon-Backend-Assignment\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Tarik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tarik\\Desktop\\assignmentFolder\\blogApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\Tarik\\Desktop\\rubicon\\Rubicon-Backend-Assignment\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tarik\\AppData\\Roaming\\NuGet\\NuGet.Config",

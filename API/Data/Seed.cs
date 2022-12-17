@@ -29,6 +29,20 @@ namespace API.Data
             {   
                 context.Blogs.Add(blog);  
             }
+            var guid1 = Guid.NewGuid().ToString();
+            var guid2 = Guid.NewGuid().ToString();
+            var guid3 = Guid.NewGuid().ToString();
+            var guid4 = Guid.NewGuid().ToString();
+            context.Tags.Add(new Tag(guid1, "bih"));
+            context.Tags.Add(new Tag(guid2, "sa"));
+            context.Tags.Add(new Tag(guid3, "worldcup"));
+            context.Tags.Add(new Tag(guid4, "unsa"));
+            context.BlogPostTags.Add(new BlogPostTag(lista.ElementAt(0).Slug, guid3, "worldcup"));
+            context.BlogPostTags.Add(new BlogPostTag(lista.ElementAt(1).Slug, guid2, "sa"));
+            context.BlogPostTags.Add(new BlogPostTag(lista.ElementAt(1).Slug, guid4, "unsa"));
+            context.BlogPostTags.Add(new BlogPostTag(lista.ElementAt(2).Slug, guid4, "unsa"));
+            context.BlogPostTags.Add(new BlogPostTag(lista.ElementAt(2).Slug, guid1, "bih"));
+            context.Comments.Add(new Comment("ovo je katastrofa", lista.ElementAt(1).Slug));
             await context.SaveChangesAsync();
         }
     }

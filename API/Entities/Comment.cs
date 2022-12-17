@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace API.Entities
 {
     public class Comment
-    {
+    {   public Comment(string body, string BlogPostSlug)
+        {
+            Body = body;
+            blogPostSlug = BlogPostSlug;
+        }
+        public Comment() {}
         public int Id { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
